@@ -12,6 +12,8 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>NSCameraUsageDescription</key>
+	<string>نحتاج الوصول للكاميرا لمسح رمز الـ QR</string>
 	<key>CFBundleName</key>
 	<string>dhi_absher</string>
 	<key>CFBundlePackageType</key>

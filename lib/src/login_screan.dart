@@ -84,10 +84,11 @@ class _LoginScreanState extends State<LoginScrean> {
       
                     const SizedBox(height: 10),
       
-                    // USERNAME FIELD
                     TextField(
+                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                       decoration: InputDecoration(
+
                         filled: true,
                         fillColor: const Color(0x40FFFFFF),
                         border: OutlineInputBorder(
@@ -100,6 +101,7 @@ class _LoginScreanState extends State<LoginScrean> {
                           fontSize: 14,
                         ),
                       ),
+                      
                     ),
       
                     const SizedBox(height: 25),
@@ -119,8 +121,10 @@ class _LoginScreanState extends State<LoginScrean> {
       
                     TextField(
                       obscureText: true,
+                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                       decoration: InputDecoration(
+                        labelStyle: const TextStyle(color: Colors.white),
                         filled: true,
                         fillColor: const Color(0x40FFFFFF),
                         border: OutlineInputBorder(
