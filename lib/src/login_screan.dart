@@ -1,3 +1,4 @@
+import 'package:dhi_absher/src/home_screan.dart';
 import 'package:flutter/material.dart';
 
 class LoginScrean extends StatefulWidget {
@@ -103,7 +104,6 @@ class _LoginScreanState extends State<LoginScrean> {
       
                     const SizedBox(height: 25),
       
-                    // PASSWORD LABEL
                     const Center(
                       child: Text(
                         "كلمة السر",
@@ -117,7 +117,6 @@ class _LoginScreanState extends State<LoginScrean> {
       
                     const SizedBox(height: 10),
       
-                    // PASSWORD FIELD
                     TextField(
                       obscureText: true,
                       textAlign: TextAlign.center,
@@ -165,7 +164,11 @@ class _LoginScreanState extends State<LoginScrean> {
                     Center(
                       child: ElevatedButton(
                         onPressed: () {
-                          debugPrint("Remember Me Status: $rememberMe");
+                         Navigator.of(context).pushReplacement(
+    MaterialPageRoute<void>(
+      builder: (context) => const HomeScrean(),
+    ),
+  );
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0x90FFFFFF),
