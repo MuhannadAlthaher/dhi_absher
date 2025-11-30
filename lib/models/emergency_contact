@@ -1,0 +1,19 @@
+class EmergencyContact {
+  final String relation;
+  final String name;
+  final String phone;
+
+  const EmergencyContact({
+    required this.relation,
+    required this.name,
+    required this.phone,
+  });
+
+  factory EmergencyContact.fromMap(Map<String, dynamic> map) {
+    return EmergencyContact(
+      relation: map['relation'] ?? '',
+      name: map['name'] ?? '',
+      phone: map['phone'] ?? '',
+    );
+  }
+}
